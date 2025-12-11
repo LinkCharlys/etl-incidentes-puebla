@@ -1,0 +1,42 @@
+# Archivo .gitignore para Proyecto ETL/Dashboard
+
+# 1. Entornos Virtuales
+# Ignorar entornos creados por venv, conda, etc.
+venv/
+.venv/
+env/
+*.egg-info/
+.conda/
+.direnv/
+
+# 2. Archivos Generados por Python / Compilados
+__pycache__/
+*.pyc
+*.pyd
+*.so
+# Logs
+*.log
+# Jupyter/IPython Notebooks Checkpoints (si usaste notebooks)
+.ipynb_checkpoints
+
+# 3. Bases de Datos Generadas (¡CRUCIAL PARA EL ETL!)
+# Tu base de datos SQLite generada por el pipeline:
+incidents.db
+
+# 4. Archivos Temporales de Sistemas Operativos
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# 5. Archivos Generados por Streamlit (Cache)
+# Carpeta de caché de Streamlit
+.streamlit/
+
+# 6. Datos Sensibles o Grandes (Si fuera el caso)
+# Ya movimos el GeoJSON a 'data/', pero si fuera muy grande,
+# podrías excluirlo si el entregable permite solo el código, 
+# pero generalmente se incluye si es parte del source. 
+# Si el GeoJSON pesa MUCHO, descomentar la línea de abajo:
+# data/*.geojson 
+
+# 7. Configuración Local (Si tuvieras archivos de configuración específicos de tu máquina)
+# local_config.yaml

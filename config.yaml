@@ -1,0 +1,8 @@
+# config.yaml
+
+data_source: "incidentes_de_transito_junio_2021.geojson" 
+data_file: "data/incidentes_de_transito.geojson"
+
+database:
+  db_type: "sqlite"
+  db_name: "incidents.db"
