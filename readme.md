@@ -118,9 +118,11 @@ streamlit run src/dashboard.py
 ### Vista General y Filtros
 
 El dashboard inicia con los filtros vacíos y muestra las métricas clave, el mapa de incidentes y el gráfico de colonias.
+![Vista Inicial del Dashboard](docs/images/dashboard_vista_general.png)
 
 ### Análisis de Distribución
 
 El gráfico de Top 10 Colonias se muestra con un ancho considerable, permitiendo una fácil identificación de las zonas con mayor concentración de incidentes.
+![Gráfico Top 10 Colonias](docs/images/dashboard_top_colonias.png)
 
 -----
